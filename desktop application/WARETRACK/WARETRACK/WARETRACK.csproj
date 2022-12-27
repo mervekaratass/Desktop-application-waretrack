@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63E9FB7B-D3DD-40F7-A0E3-8F6040782309}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WARETRACK</RootNamespace>
+    <AssemblyName>WARETRACK</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\Bnfu_1.5.3_crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_ana_sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ana_sayfa.Designer.cs">
+      <DependentUpon>frm_ana_sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cikis_sorgusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cikis_sorgusu.Designer.cs">
+      <DependentUpon>frm_cikis_sorgusu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kullanici_girisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kullanici_girisi.Designer.cs">
+      <DependentUpon>frm_kullanici_girisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_dogrulama_kodu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_dogrulama_kodu.Designer.cs">
+      <DependentUpon>frm_dogrulama_kodu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_hesap_olustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_hesap_olustur.Designer.cs">
+      <DependentUpon>frm_hesap_olustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_raporlar.Designer.cs">
+      <DependentUpon>frm_raporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpr_satın_alma_irsaliyeleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpr_satın_alma_irsaliyeleri.Designer.cs">
+      <DependentUpon>frm_rpr_satın_alma_irsaliyeleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpr_satış_irsaliyeleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpr_satış_irsaliyeleri.Designer.cs">
+      <DependentUpon>frm_rpr_satış_irsaliyeleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpr_ürünler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpr_ürünler.Designer.cs">
+      <DependentUpon>frm_rpr_ürünler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpr_ürün_fişleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpr_ürün_fişleri.Designer.cs">
+      <DependentUpon>frm_rpr_ürün_fişleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_satın_alma_irsaliyeleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_satın_alma_irsaliyeleri.Designer.cs">
+      <DependentUpon>frm_satın_alma_irsaliyeleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_satış_irsaliyeleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_satış_irsaliyeleri.Designer.cs">
+      <DependentUpon>frm_satış_irsaliyeleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sifre_sıfırla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_sifre_sıfırla.Designer.cs">
+      <DependentUpon>frm_sifre_sıfırla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ürün_fisleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ürün_fisleri.Designer.cs">
+      <DependentUpon>frm_ürün_fisleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_yeni_sifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_yeni_sifre.Designer.cs">
+      <DependentUpon>frm_yeni_sifre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ürünler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ürünler.Designer.cs">
+      <DependentUpon>frm_ürünler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Veri_tabanı\veritabani_class.cs" />
+    <Compile Include="WARETRACKDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet111.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet111.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WARETRACKDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WARETRACKDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_ana_sayfa.resx">
+      <DependentUpon>frm_ana_sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cikis_sorgusu.resx">
+      <DependentUpon>frm_cikis_sorgusu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kullanici_girisi.resx">
+      <DependentUpon>frm_kullanici_girisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_dogrulama_kodu.resx">
+      <DependentUpon>frm_dogrulama_kodu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_hesap_olustur.resx">
+      <DependentUpon>frm_hesap_olustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_raporlar.resx">
+      <DependentUpon>frm_raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpr_satın_alma_irsaliyeleri.resx">
+      <DependentUpon>frm_rpr_satın_alma_irsaliyeleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpr_satış_irsaliyeleri.resx">
+      <DependentUpon>frm_rpr_satış_irsaliyeleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpr_ürünler.resx">
+      <DependentUpon>frm_rpr_ürünler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpr_ürün_fişleri.resx">
+      <DependentUpon>frm_rpr_ürün_fişleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_satın_alma_irsaliyeleri.resx">
+      <DependentUpon>frm_satın_alma_irsaliyeleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_satış_irsaliyeleri.resx">
+      <DependentUpon>frm_satış_irsaliyeleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sifre_sıfırla.resx">
+      <DependentUpon>frm_sifre_sıfırla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ürün_fisleri.resx">
+      <DependentUpon>frm_ürün_fisleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_yeni_sifre.resx">
+      <DependentUpon>frm_yeni_sifre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ürünler.resx">
+      <DependentUpon>frm_ürünler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WARETRACKDataSet.xsc">
+      <DependentUpon>WARETRACKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet.xss">
+      <DependentUpon>WARETRACKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet10.xsc">
+      <DependentUpon>WARETRACKDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet10.xss">
+      <DependentUpon>WARETRACKDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet11.xsc">
+      <DependentUpon>WARETRACKDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet11.xss">
+      <DependentUpon>WARETRACKDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet111.xsc">
+      <DependentUpon>WARETRACKDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet111.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet111.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet111.xss">
+      <DependentUpon>WARETRACKDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet12.xsc">
+      <DependentUpon>WARETRACKDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet12.xss">
+      <DependentUpon>WARETRACKDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet13.xsc">
+      <DependentUpon>WARETRACKDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet13.xss">
+      <DependentUpon>WARETRACKDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet14.xsc">
+      <DependentUpon>WARETRACKDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet14.xss">
+      <DependentUpon>WARETRACKDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet15.xsc">
+      <DependentUpon>WARETRACKDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet15.xss">
+      <DependentUpon>WARETRACKDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet2.xsc">
+      <DependentUpon>WARETRACKDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet2.xss">
+      <DependentUpon>WARETRACKDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet3.xsc">
+      <DependentUpon>WARETRACKDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet3.xss">
+      <DependentUpon>WARETRACKDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet4.xsc">
+      <DependentUpon>WARETRACKDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet4.xss">
+      <DependentUpon>WARETRACKDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet5.xsc">
+      <DependentUpon>WARETRACKDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet5.xss">
+      <DependentUpon>WARETRACKDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet6.xsc">
+      <DependentUpon>WARETRACKDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet6.xss">
+      <DependentUpon>WARETRACKDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet7.xsc">
+      <DependentUpon>WARETRACKDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet7.xss">
+      <DependentUpon>WARETRACKDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet8.xsc">
+      <DependentUpon>WARETRACKDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet8.xss">
+      <DependentUpon>WARETRACKDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet9.xsc">
+      <DependentUpon>WARETRACKDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="WARETRACKDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WARETRACKDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WARETRACKDataSet9.xss">
+      <DependentUpon>WARETRACKDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
