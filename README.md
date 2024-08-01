@@ -1,32 +1,32 @@
-# Desktop-application-waretrack
-Waretrack is one of the applications that businesses can use while tracking their warehouses. Visual Studio 2019 was used while programming the application. The C# form was chosen as the language because it has form elements that will provide good interaction with the user. Microsoft SQL Server 2019 was used as the database. In the application, businesses will log in to the system by registering. After logging in, you can see products, reports, material receipts, sales and purchasing waybills; can add, subtract and delete above them. They can sign out from the sign out section. Thus, it is aimed to facilitate the tracking of the goods in the warehouse of an enterprise.
-             
-### Some screenshots of the project:
-#### Login Screen
+# WareTrack (Depo Takip Sistemi)
+Waretrack, işletmelerin depolarını takip ederken kullanabileceği uygulamalardan biridir. Uygulamanın programlanmasında Visual Studio 2019 kullanılmıştır. Form elemanlarının kullanıcıyla iyi bir etkileşim sağlayacağı düşünüldüğü için C# dili tercih edilmiştir. Veritabanı olarak Microsoft SQL Server 2019 kullanılmıştır. Uygulamada, işletmeler sisteme kayıt olarak giriş yaparlar. Giriş yaptıktan sonra ürünleri, raporları, malzeme alımlarını, satış ve satın alma yol belgelerini görebilir, bunları ekleyebilir, çıkarabilir ve silebilirler. Oturum kapatma bölümünden çıkış yapabilirler. Böylece, bir işletmenin deposundaki malların takibini kolaylaştırmak amaçlanmıştır.
+
+### Projeden bazı ekranlar:
+#### Giriş Ekranı
 <img src="https://github.com/mervekaratass/Desktop-application-waretrack/blob/main/desktop%20application/Images/login-screen.png" width=300>
 
-#### Incorrect Login Entry Screen
+#### Hatalı Giriş Ekranı
 <img src="https://github.com/mervekaratass/Desktop-application-waretrack/blob/main/desktop%20application/Images/incorrect-login-entry-screen.png" width=300>
 
-#### Home Screen
+#### Ana Sayfa
 <img src="https://github.com/mervekaratass/Desktop-application-waretrack/blob/main/desktop%20application/Images/home-screen.png" width=300>
 
-#### Products Screen
+#### Ürünler Ekranı
 <img src="https://github.com/mervekaratass/Desktop-application-waretrack/blob/main/desktop%20application/Images/products-screen.png" width=300>
 
-#### Purchase Waybills Screen
+#### Satın Alma İrsaliyeleri Ekranı
 <img src="https://github.com/mervekaratass/Desktop-application-waretrack/blob/main/desktop%20application/Images/purchase-waybills.png" width=300>
 
-#### Sales Waybills Screen
+#### Satış İrsaliyeleri Ekranı
 <img src="https://github.com/mervekaratass/Desktop-application-waretrack/blob/main/desktop%20application/Images/sales%20waybills.png" width=300>
 
-#### Product Receipts Screen
+#### Ürün Fişleri Ekranı
 <img src="https://github.com/mervekaratass/Desktop-application-waretrack/blob/main/desktop%20application/Images/product-receipts.png" width=300>
 
-#### Reports Screen
+#### Raporlar Ekranı
 <img src="https://github.com/mervekaratass/Desktop-application-waretrack/blob/main/desktop%20application/Images/reports.png" width=300>
 
-#### Exit Screen
+#### Çıkış Ekranı
 <img src="https://github.com/mervekaratass/Desktop-application-waretrack/blob/main/desktop%20application/Images/exit-screen.png" width=300>
 
 
